@@ -1,0 +1,28 @@
+# Zakovat avto-ro'yxatdan o'tish boti uchun konfiguratsiya
+
+tournament_id: 947
+tournament_url_template: "https://zakovatklubi.uz/tournaments/{tournament_id}"
+
+# Sahifani qayta tekshirish intervali (sekundlarda)
+poll_interval_seconds: 2.5
+
+# Brauzer ko'rinmas (headless) bo'lishi kerakmi? Birinchi sinov uchun false.
+headless: false
+
+# Playwright persistent context papkasi (cookie, localStorage shu yerda saqlanadi)
+user_data_dir: "./user-data"
+
+# Selektorlar — agar sayt o'zgarsa, faqat shu yerni tahrirlash kifoya
+selectors:
+  participate_button_text: "Ishtirok etish"
+  team_modal_title: "Turnirda ro'yxatdan o'tish"
+  participants_modal_title: "Ishtirokchilarni tanlang"
+  continue_button_text: "Davom etishi"
+  # Bilimdonlar bo'limi va undagi tanlanmagan (qo'shish mumkin bo'lgan) qator
+  bilimdonlar_heading_text: "Bilimdonlar"
+  participant_row_selector: ".income-person__main-player"
+  participant_addable_class: "add"  # bu class bor bo'lsa - tanlanmagan, bosish mumkin
+  # Klub tanlash modal'i (Ishtirokchilar modal'idan keyin)
+  # Faqat hali tanlanmagan kartani izlaymiz — `selected` klassi bor karta
+  # sahifa orqasidagi jadvalga tegishli (allaqachon tanlangan klublar).
+  club_card_selector: ".my-teams-card:not(.selected)"
