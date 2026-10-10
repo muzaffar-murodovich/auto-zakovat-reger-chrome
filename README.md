@@ -1,3 +1,9 @@
+> **⚠️ ARXIV (2026-07-06 dan).** Bu loyiha endi ishlatilmaydi. Avtomatik
+> ro'yxatdan o'tish `zakovat-quiz-checker-bot` ichida to'g'ridan-to'g'ri API
+> orqali (`POST /v1/user/request`, brauzersiz) bajariladi — u serverda 24/7
+> ishlaydi, quiz ochilganda Baurlar jamoasini o'zi yozadi. zk-auto faqat
+> qo'lda zaxira variant sifatida saqlanib turibdi.
+
 # zk-auto — Zakovat klubi turnirga avtomatik ro'yxatdan o'tish
 
 Belgilangan turnir sahifasini (`https://zakovatklubi.uz/tournaments/{id}`) doimiy kuzatib, "Ishtirok etish" tugmasi paydo bo'lishi bilanoq uni bosib, jamoa va ishtirokchilarni tanlab, "Davom etishi" tugmasiga qadar avtomatik o'tadi.
